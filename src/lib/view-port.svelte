@@ -14,6 +14,11 @@
   export let sectionColor = "#fff"
 </script>
 
+<svelte:head>
+  <!-- <script type="module">
+      import @threlte/core from https://cdn.jsdelivr.net/npm/@threlte/core@7.0.9/+esm
+  </script> -->
+</svelte:head>
 <div>
   <Canvas>
     <T.PerspectiveCamera makeDefault position={[0, 4, 9]} fov={15}>
