@@ -26,6 +26,7 @@
     "@threlte/core": "^7.0.6",
     "@threlte/extras": "^8.0.8",
     "@xstate/svelte": "^3.0.0",
+    "three": "^0.159.0",
     "xstate": "^5.1.0"
   }
 }

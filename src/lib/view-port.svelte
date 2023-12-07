@@ -8,6 +8,7 @@
 <script lang="ts">
   import { Canvas, T } from "@threlte/core"
   import { OrbitControls, Grid, ContactShadows } from "@threlte/extras"
+  import Bots from "./Bots.svelte"
 </script>
 
 <div>
@@ -35,6 +36,7 @@
       far={1.8}
       opacity={0.7}
     />
+    <Bots />
   </Canvas>
 </div>
 

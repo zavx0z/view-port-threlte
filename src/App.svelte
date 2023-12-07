@@ -1,13 +1,6 @@
 <script lang="ts">
-  let name = "one"
-  // только при изменении в svelte
-  $: console.log(name)
-  setTimeout(() => (name = "yo!"), 4000)
-
   const useNode = (node: HTMLElement) => {
-    node.addEventListener("m4-update", (e) => {
-      console.log(e)
-    })
+      console.log(node)
   }
 </script>
 
@@ -16,7 +9,7 @@
   <title>view-port</title>
 </svelte:head>
 <main>
-  <view-port use:useNode {name}> </view-port>
+  <view-port use:useNode> </view-port>
 </main>
 
 <style>
