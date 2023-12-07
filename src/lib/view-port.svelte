@@ -9,6 +9,9 @@
   import { Canvas, T } from "@threlte/core"
   import { OrbitControls, Grid, ContactShadows } from "@threlte/extras"
   import Bots from "./Bots.svelte"
+
+  export let cellColor = "#fff"
+  export let sectionColor = "#fff"
 </script>
 
 <div>
@@ -18,14 +21,7 @@
     </T.PerspectiveCamera>
     <T.AmbientLight intensity={0.5} />
     <T.DirectionalLight args={["#fff", 0.5]} intensity={0.6} />
-    <Grid
-      position.y={-0.001}
-      cellColor={"#fff"}
-      sectionColor={"#fff"}
-      sectionThickness={1}
-      fadeDistance={14}
-      cellSize={1}
-    />
+    <Grid position.y={-0.001} {cellColor} {sectionColor} sectionThickness={1} fadeDistance={14} cellSize={1} />
     <ContactShadows
       resolution={44}
       depthWrite={true}

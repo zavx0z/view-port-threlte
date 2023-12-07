@@ -1,6 +1,6 @@
 <script lang="ts">
   const useNode = (node: HTMLElement) => {
-      console.log(node)
+    // console.log(node)
   }
 </script>
 
@@ -9,7 +9,7 @@
   <title>view-port</title>
 </svelte:head>
 <main>
-  <view-port use:useNode> </view-port>
+  <view-port cellColor={"red"} sectionColor={"blue"} use:useNode />
 </main>
 
 <style>

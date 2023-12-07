@@ -2,7 +2,7 @@
   import { Group } from "three"
   import { T, forwardEventHandlers } from "@threlte/core"
   import { interactivity, useGltf, useGltfAnimations } from "@threlte/extras"
-  import model from "./bots.glb?url"
+  import model from "../assets/bots.glb?url"
   const gltf = useGltf(model)
 
   interactivity()
